@@ -25,7 +25,7 @@
     "prettify": "tsfmt -r --baseDir ./src",
     "sqlz:migrate": "./node_modules/.bin/sequelize db:migrate",
     "sqlz:undo": "./node_modules/.bin/sequelize db:migrate:undo",
-    "sqlz:new": "./node_modules/.bin/sequelize migration:create"  
+    "sqlz:new": "./node_modules/.bin/sequelize migration:create"
   },
   "lint-staged": {
     "src/**/*.ts": [
@@ -39,8 +39,9 @@
     "cross-env": "~3.2.3",
     "express": "~4.15.0",
     "express-boom": "~2.0.0",
-    "express-validator": "~3.1.2",
+    "express-validator": "^4.3.0",
     "morgan": "~1.8.1",
+    "mssql": "^4.1.0",
     "pg": "~6.1.2",
     "pg-hstore": "~2.3.2",
     "sequelize": "~3.30.2",
@@ -51,7 +52,7 @@
     "@types/body-parser": "~0.0.33",
     "@types/chai": "~3.4.35",
     "@types/express": "~4.0.35",
-    "@types/express-validator": "~2.20.33",
+    "@types/express-validator": "^3.0.0",
     "@types/mocha": "~2.2.39",
     "@types/morgan": "~1.7.32",
     "@types/sequelize": "~3.4.40",

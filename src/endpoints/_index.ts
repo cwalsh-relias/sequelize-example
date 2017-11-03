@@ -1,4 +1,3 @@
-import * as LanguageController from './languages/_index'
-import * as AppUserController from './appusers/_index'
+import * as Report1Controller from './report1/_index'
 
-export { LanguageController, AppUserController }
+export { Report1Controller }

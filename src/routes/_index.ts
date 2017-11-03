@@ -1,7 +1,6 @@
 import * as winston from 'winston'
 import { Express, Request, Response } from 'express'
-import * as LanguagesRoutes from './languages'
-import * as AppUserRoutes from './appusers'
+import * as Report1Routes from './report1'
 
 export function initRoutes(app: Express) {
   winston.log('info', '--> Initialisations des routes')
@@ -10,8 +9,7 @@ export function initRoutes(app: Express) {
     message: 'server is running!'
   }))
 
-  LanguagesRoutes.routes(app)
-  AppUserRoutes.routes(app)
+  Report1Routes.routes(app)
 
   app.all('*', (req: Request, res: Response) => res.boom.notFound())
 }
